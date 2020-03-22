@@ -26,9 +26,6 @@ for condition in conditions: # For each condition
 	print(np.tile(sub_mean, (30, 1)))
 	print(df - np.tile(sub_mean, (30, 1)).transpose())
 
-	# df.drop('Lab ID Number', axis=1)
-	# print(df.mean(axis=1))
-
 plt.xlabel('Frequency (Hz)') #axis labels
 plt.ylabel('Power ($\u03BCV^2$)')
 plt.legend(conditions) #legend with condition names
